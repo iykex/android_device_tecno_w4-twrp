@@ -42,12 +42,17 @@ Add to `.repo/local_manifests/w4.xml`:
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-	<project path="device/tecno/w4" name="android_device_tecno_w4" remote="iykequame" revision="master" />
+	<project path="device/tecno/w4" name="android_device_tecno_w4" remote="github" revision="master" />
 
 </manifest>
 ```
 
 Then run `repo sync` or  `repo sync --force-sync`  to check it out.
+
+or
+
+`git clone https://github.com/iykequame/android_device_tecno_w4.git -b master  device/tecno/w4`
+
 
 # How To Compile
 
