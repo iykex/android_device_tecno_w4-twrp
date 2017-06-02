@@ -32,6 +32,23 @@ Camera Features | LED Flash, Autofocus
 
 # tecno_w4_device_tree
 
+To clone tree automatically, then;
+ `cd .repo && mkdir local_manifests`
+ `cd local_manifests`
+
+Add to `.repo/local_manifests/w4.xml`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+	<project path="device/tecno/w4" name="android_device_tecno_w4" remote="github" revision="master" />
+
+</manifest>
+```
+
+Then run `repo sync` or  `repo sync --force-sync`  to check it out.
+
 # How To Compile
 
 ```
